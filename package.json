@@ -30,8 +30,11 @@
   },
   "keywords": [
     "snowflake",
+    "snowflakeId",
     "id",
-    "node"
+    "Node",
+    "JavaScript",
+    "雪花"
   ],
   "author": "jl15988",
   "license": "MIT",
