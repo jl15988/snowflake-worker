@@ -1,0 +1,51 @@
+{
+  "name": "snowflake-worker",
+  "version": "0.0.1",
+  "description": "A JavaScript or Node snowflake ID generator.",
+  "type": "module",
+  "main": "./dist/snowflake-worker.cjs.js",
+  "module": "./dist/snowflake-worker.esm.js",
+  "browser": "./dist/snowflake-worker.browser.js",
+  "unpkg": "./dist/snowflake-worker.browser.min.js",
+  "jsdelivr": "./dist/snowflake-worker.browser.min.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/snowflake-worker.esm.js",
+      "require": "./dist/snowflake-worker.cjs.js"
+    },
+    "./package": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "toPublish": "npm publish --registry=https://registry.npmjs.org --access=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jl15988/snowflake-worker.git"
+  },
+  "keywords": [
+    "snowflake",
+    "id",
+    "node"
+  ],
+  "author": "jl15988",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jl15988/snowflake-worker/issues"
+  },
+  "homepage": "https://github.com/jl15988/snowflake-worker#readme",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.18.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "ts-loader": "^9.5.1"
+  },
+  "dependencies": {
+    "long": "^5.2.3"
+  }
+}
